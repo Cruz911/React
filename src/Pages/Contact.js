@@ -11,7 +11,7 @@ const Contact = () => {
                 <div className="row">
                     <div className="col-12 d-flex flex-wrap justify-content-between align-items-center">
                         <div className="site-branding d-flex align-items-center">
-                            <a data-aos="fade-up" className="d-block" href="/" rel="home"><img className="d-block" src="images/logo.png" alt="logo"/></a>
+                            {/* <a className="d-block" href="/" rel="home"><img className="d-block" src="images/logo.png" alt="logo"/></a> */}
                         </div>
 
                         <nav className="site-navigation d-flex justify-content-end align-items-center">
@@ -41,9 +41,9 @@ const Contact = () => {
         <div className="container">
             <div className="row">
                 <div className="col-12">
-                    <h1 data-aos="fade-left">Contact</h1>
+                    <h1 >Contact</h1>
 
-                    <div data-aos="fade-down" data-aos-delay="200" className="breadcrumbs">
+                    <div data-aos-delay="200" className="breadcrumbs">
                         <ul className="d-flex flex-wrap align-items-center p-0 m-0">
                             <li><a href="/">Home</a></li>
                             <li>Contact</li>
@@ -54,7 +54,6 @@ const Contact = () => {
             </div>
         </div>
 
-        <img data-aos="fade-left" className="header-img" src="https://res.cloudinary.com/lawfirm1000/image/upload/v1602714209/WebRec/contact-bg_ehfdg2.png" alt=""/>
     </header>
 
 
@@ -83,21 +82,6 @@ const Contact = () => {
 
                 <div className="col-12">
                     <input type="submit" name="" value="Send Message" className="button gradient-bg"/>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div data-aos="fade-up" className="subscribe-banner">
-        <div className="container">
-            <div className="row">
-                <div className="col-12 col-lg-8 offset-lg-2">
-                    <h2>Subscribe to our newsletter</h2>
-
-                    <form>
-                        <input type="email" placeholder="E-mail address"/>
-                        <input className="button gradient-bg" type="submit" value="Subscribe"/>
-                    </form>
                 </div>
             </div>
         </div>

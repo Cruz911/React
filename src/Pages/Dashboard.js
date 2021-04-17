@@ -19,7 +19,8 @@ const handleClick = (e) => {
 if (redirect !== null){
     return <Redirect to={redirect} />
 }
-else return (
+else
+ return (
     <div className="single-page">
         <header className="site-header">
         <div className="nav-bar">
@@ -70,7 +71,7 @@ else return (
             </div>
         </div>
 
-        <img data-aos="fade-left" className="header-img" src="https://res.cloudinary.com/lawfirm1000/image/upload/v1602714215/WebRec/about-bg_yybmu4.png" alt=""/>
+        {/* <img data-aos="fade-left" className="header-img" src="https://res.cloudinary.com/lawfirm1000/image/upload/v1602714215/WebRec/about-bg_yybmu4.png" alt=""/> */}
     </header>
 
         <div className="container dashboard" data-aos="fade-up">

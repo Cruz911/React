@@ -8,11 +8,7 @@ const Footer = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-12 col-md-6 col-lg-4">
-                        <div  data-aos="fade-up" className="foot-about">
-                            <h2><a href="/"><img src="images/logo.png" alt=""/></a></h2>
-
-                            <p>All your medical records in one place.</p>
-                        </div>
+                        
                     </div>
 
                     <div className="col-12 col-md-6 col-lg-4 mt-5 mt-md-0">
@@ -20,9 +16,9 @@ const Footer = () => {
                             <h2>Contact</h2>
 
                             <ul className="p-0 m-0">
-                                <li><span>Address:</span>D36, ABH, UCH, Ibadan, Nigeria.</li>
-                                <li><span>Phone:</span>+234 816 098 3729</li>
-                                <li><span>Email:</span>lawalshalom@gmail.com</li>
+                                <li><span>Address:</span>13 Linby CL, Avondale West, Harare.</li>
+                                <li><span>Phone:</span>+263 779 941 094</li>
+                                <li><span>Email:</span>joelchadambuka@gmail.com</li>
                             </ul>
                         </div>
                     </div>

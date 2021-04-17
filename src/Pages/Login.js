@@ -62,7 +62,7 @@ const Login = () => {
                 <div className="row">
                     <div className="col-12 d-flex flex-wrap justify-content-between align-items-center">
                         <div className="site-branding d-flex align-items-center">
-                            <a data-aos="fade-down" className="d-block" href="/" rel="home"><img className="d-block" src="images/logo.png" alt="logo"/></a>
+                            {/* <a className="d-block" href="/" rel="home"><img className="d-block" src="images/logo.png" alt="logo"/></a> */}
                         </div>
 
                         <nav className="site-navigation d-flex justify-content-end align-items-center">
@@ -92,9 +92,9 @@ const Login = () => {
         <div className="container">
             <div className="row">
                 <div className="col-12">
-                    <h2 data-aos="fade-up">Sign Up/In</h2>
+                    <h2>Sign Up/In</h2>
 
-                    <div data-aos="fade-up" data-aos-delay="100" className="breadcrumbs">
+                    <div data-aos-delay="100" className="breadcrumbs">
                         <ul className="d-flex flex-wrap align-items-center p-0 m-0">
                             <li><a href="/">Home</a></li>
                             <li>Sign Up/In</li>
@@ -105,10 +105,9 @@ const Login = () => {
             </div>
         </div>
 
-        <img data-aos="fade-left" className="header-img" src="https://res.cloudinary.com/lawfirm1000/image/upload/v1602714215/WebRec/about-bg_yybmu4.png" alt=""/>
     </header>
 
-      <div data-aos="fade-up" data-aos-delay="100" className="container" id="loginPage">
+      <div data-aos-delay="100" className="container" id="loginPage">
         <div className="form-container sign-up-container">
           <form action="#">
             <h1>Create Account</h1>

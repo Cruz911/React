@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Footer from './Footer';
 import { Redirect } from 'react-router';
+import { Link } from 'react-router-dom';
 
 const Dashboard = () => {
     const [ redirect, setRedirect ] = useState(null);
@@ -28,18 +29,17 @@ else
                 <div className="row">
                     <div className="col-12 d-flex flex-wrap justify-content-between align-items-center">
                         <div className="site-branding d-flex align-items-center">
-                            <a data-aos="fade-down" className="d-block" href="/" rel="home"><img className="d-block" src="images/logo.png" alt="logo"/></a>
                         </div>
 
                         <nav className="site-navigation d-flex justify-content-end align-items-center">
                             <ul className="d-flex flex-column flex-lg-row justify-content-lg-end align-items-center">
-                                <li><a href="/">Home</a></li>
-                                <li><a href="/about">About us</a></li>
-                                <li  className="current-menu-item"><a href="/dashboard">Dashboard</a></li>
-                                <li><a href="/contact">Contact</a></li>
+                                <li><Link to="/">Home</Link></li>
+                                <li><Link to="/about">About us</Link></li>
+                                <li  className="current-menu-item"><Link to="/dashboard">Dashboard</Link></li>
+                                <li><Link to="/contact">Contact</Link></li>
 
                                 <li className="call-btn button gradient-bg mt-3 mt-md-0">
-                                    <a className="d-flex justify-content-center align-items-center" href="tel:=2348160983729"><img src="images/emergency-call.png" alt=""/> Call us!</a>
+                                    <Link className="d-flex justify-content-center align-items-center" to="/bot">Ask Tanaka</Link>
                                 </li>
                             </ul>
                         </nav>
@@ -62,7 +62,7 @@ else
 
                     <div data-aos="fade-up" data-aos-delay="100" className="breadcrumbs">
                         <ul className="d-flex flex-wrap align-items-center p-0 m-0">
-                            <li><a href="/">Home</a></li>
+                            <li><Link to="/">Home</Link></li>
                             <li>Dashboard</li>
                         </ul>
                     </div>

@@ -3,6 +3,7 @@ import React from 'react';
 import Footer from './Footer';
 import img from '../images/hiv.jpeg'
 import ribbon from '../images/ribbon.jpeg'
+import { Link } from 'react-router-dom';
 // import background from '../images/background.jpg'
 
 const Home = () => {
@@ -14,18 +15,18 @@ const Home = () => {
                 <div className="row">
                     <div className="col-12 d-flex flex-wrap justify-content-between align-items-center">
                         <div className="site-branding d-flex align-items-center">
-                           {/* <a className="d-block" href="/" rel="home"><img className="d-block" src={logo} alt="logo" /></a> */}
+                           {/* <Link className="d-block" to="/" rel="home"><img className="d-block" src={logo} alt="logo" /></Link> */}
                         </div>
 
                         <nav className="site-navigation d-flex justify-content-end align-items-center">
                             <ul className="d-flex flex-column flex-lg-row justify-content-lg-end align-items-center">
-                                <li className="current-menu-item"><a href="/">Home</a></li>
-                                <li><a href="/about">About us</a></li>
-                                <li><a href="/login">Sign Up/In</a></li>
-                                <li><a href="/contact">Contact</a></li>
+                                <li className="current-menu-item"><Link to="/">Home</Link></li>
+                                <li><Link to="/about">About us</Link></li>
+                                <li><Link to="/login">Sign Up/In</Link></li>
+                                <li><Link to="/contact">Contact</Link></li>
 
                                 <li className="call-btn button gradient-bg mt-3 mt-md-0">
-                                    <a className="d-flex justify-content-center align-items-center" href="tel:=2348160983729">Need Advice?</a>
+                                    <Link className="d-flex justify-content-center align-items-center" to="tel:=2348160983729">Need Advice?</Link>
                                 </li>
                             </ul>
                         </nav>
@@ -57,7 +58,7 @@ const Home = () => {
                                     </div>
 
                                     <footer className="entry-footer d-flex flex-wrap align-items-center mt-4">
-                                        <a href="#about" className="button gradient-bg">Read More</a>
+                                        <Link to="/about" className="button gradient-bg">Read More</Link>
                                     </footer>
                                 </div>
                             </div>
@@ -77,7 +78,7 @@ const Home = () => {
 
                     <p>MedRec is a digital solution to the health record system. It seeks to replace the traditional paper health records system by providing an easy way to save, sort, retrieve, and visualize record data in a simple yet secured interface. <br/> MedRec is constantly maintained by a group of health-tech enthusaists who are committed to improving it's quality and improving user experience.</p>
 
-                    <a className="d-inline-block button gradient-bg" href="/about">Read More</a>
+                    <Link className="d-inline-block button gradient-bg" to="/about">Read More</Link>
                 </div>
 
                 <div className="col-12 col-lg-6 mt-5 mt-lg-0">
@@ -99,7 +100,7 @@ const Home = () => {
                       <br/> What more? You can save up your record even while offline and it gets uploaded automatically when you have internet access! See your patients data statistics with our data visualizations and lots more!
                     </p>
 
-                    <a className="d-inline-block button gradient-bg" href="/login">Sign Up</a>
+                    <Link className="d-inline-block button gradient-bg" to="/login">Sign Up</Link>
                 </div>
 
                 <div className="col-12 col-lg-6 mt-5 mt-lg-0">

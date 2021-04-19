@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Footer from './Footer'
 
 const Contact = () => {
@@ -11,18 +12,18 @@ const Contact = () => {
                 <div className="row">
                     <div className="col-12 d-flex flex-wrap justify-content-between align-items-center">
                         <div className="site-branding d-flex align-items-center">
-                            {/* <a className="d-block" href="/" rel="home"><img className="d-block" src="images/logo.png" alt="logo"/></a> */}
+                            {/* <Link className="d-block" to="/" rel="home"><img className="d-block" src="images/logo.png" alt="logo"/></Link> */}
                         </div>
 
                         <nav className="site-navigation d-flex justify-content-end align-items-center">
                             <ul className="d-flex flex-column flex-lg-row justify-content-lg-end align-items-center">
-                            <li><a href="/">Home</a></li>
-                                <li><a href="/about">About us</a></li>
-                                <li><a href="/login">Sign Up/In</a></li>
-                                <li className="current-menu-item"><a href="/contact">Contact</a></li>
+                            <li><Link to="/">Home</Link></li>
+                                <li><Link to="/about">About us</Link></li>
+                                <li><Link to="/login">Sign Up/In</Link></li>
+                                <li className="current-menu-item"><Link to="/contact">Contact</Link></li>
 
                                 <li className="call-btn button gradient-bg mt-3 mt-md-0">
-                                    <a className="d-flex justify-content-center align-items-center" href="tel:=2348160983729"><img src="images/emergency-call.png" alt=""/> Call us!</a>
+                                    <Link className="d-flex justify-content-center align-items-center" to="/bot">Ask Tanaka</Link>
                                 </li>
                             </ul>
                         </nav>
@@ -45,7 +46,7 @@ const Contact = () => {
 
                     <div data-aos-delay="200" className="breadcrumbs">
                         <ul className="d-flex flex-wrap align-items-center p-0 m-0">
-                            <li><a href="/">Home</a></li>
+                            <li><Link to="/">Home</Link></li>
                             <li>Contact</li>
                         </ul>
                     </div>

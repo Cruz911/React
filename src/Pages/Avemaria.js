@@ -9,7 +9,6 @@ const Avemaria = () => (
                 <div className="row">
                     <div className="col-12 d-flex flex-wrap justify-content-between align-items-center">
                         <div className="site-branding d-flex align-items-center">
-                            <a data-aos="fade-down" className="d-block" href="/" rel="home"><img className="d-block" src="images/logo.png" alt="logo"/></a>
                         </div>
 
                         <nav className="site-navigation d-flex justify-content-end align-items-center">

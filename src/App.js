@@ -12,6 +12,7 @@ import Avemaria from "./Pages/Avemaria";
 import Error from "./Error";
 import './App.css';
 import AOS from 'aos';
+import Bot from "./Pages/Bot";
 
 export default class App extends React.Component {
 componentDidMount(){
@@ -60,6 +61,7 @@ componentDidMount(){
                     <Visualise {...renderprops} />} />
                     <Route path="/avemaria-anders" render={renderprops =>
                         <Avemaria {...renderprops} />} />
+                <Route path="/bot" component={Bot} />
               <Route render={renderprops =>
                 <Error {...renderprops} />} />
           </Switch>

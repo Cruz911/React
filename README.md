@@ -1,4 +1,4 @@
 
-**Email:** admin@gmail.com
-**Password:** medrecadmin
+**Email:** test@gmail.com
+**Password:** test
 

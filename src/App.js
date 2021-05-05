@@ -13,6 +13,10 @@ import Error from "./Error";
 import './App.css';
 import AOS from 'aos';
 import Bot from "./Pages/Bot";
+import Patient from "./Pages/Patient";
+import Notifications from "./Pages/Notifications";
+import MedicalRecords from "./Pages/MedicalRecords";
+import Tips from "./Pages/Tips";
 
 export default class App extends React.Component {
 componentDidMount(){
@@ -62,6 +66,10 @@ componentDidMount(){
                     <Route path="/avemaria-anders" render={renderprops =>
                         <Avemaria {...renderprops} />} />
                 <Route path="/bot" component={Bot} />
+                <Route path="/patient" component={Patient} />
+                <Route path="/notifications" component={Notifications} />
+                <Route path="/medical-records" component={MedicalRecords} />
+                <Route path="/tips" component={Tips}/>
               <Route render={renderprops =>
                 <Error {...renderprops} />} />
           </Switch>

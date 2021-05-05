@@ -26,7 +26,7 @@ const Home = () => {
                                 <li><Link to="/contact">Contact</Link></li>
 
                                 <li className="call-btn button gradient-bg mt-3 mt-md-0">
-                                    <Link className="d-flex justify-content-center align-items-center" to="/bot">Need Advice?</Link>
+                                    <Link className="d-flex justify-content-center align-items-center" to="/bot">Ask Tanaka!</Link>
                                 </li>
                             </ul>
                         </nav>

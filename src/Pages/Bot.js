@@ -2,25 +2,27 @@ import React, { Component } from 'react';
 
 class Bot extends Component {
     state = { 
-        question: ''
+        question: '',
+        answer: ''
      }
 
-     onChange = (e)=>{
-        
+     onChange = (event)=>{
+        this.setState({question: event.target.value});
      }
 
-     onClick = (e)=>{
-
+     onClick = (event)=>{
+        event.preventDefault()
      }
     render() { 
         return ( 
             <div className='content mt-4'>
                 <h1>Tanaka Chatbot</h1>
                 <div id="chatbox">
-                    <p class="botText"><span>Hie. I'm Tanaka</span></p>
+                    <p className="botText"><span>Hie. I'm Tanaka</span></p>
                 </div>
                 <div id="userInput">
-                    <input id="textInput" onChange={this.onChange} type="text" name="msg" placeholder="Message"/>
+                <p class="botText"><span>Lorem ipsum</span></p>
+                    <input id="textInput" onChange={this.onChange} type="text" name="msg" value={this.state.question} placeholder="Message"/>
                     <button id="buttonInput" onClick={this.onClick}>Ask</button>
                 </div>
 

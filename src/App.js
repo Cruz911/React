@@ -17,6 +17,10 @@ import Patient from "./Pages/Patient";
 import Notifications from "./Pages/Notifications";
 import MedicalRecords from "./Pages/MedicalRecords";
 import Tips from "./Pages/Tips";
+import SignIn from "./Pages/SignUp";
+import WorkerSignUp from "./Pages/WorkerSignUp";
+import AddJob from "./Pages/AddJob";
+import AddAid from "./Pages/AddAid";
 
 export default class App extends React.Component {
 componentDidMount(){
@@ -70,6 +74,10 @@ componentDidMount(){
                 <Route path="/notifications" component={Notifications} />
                 <Route path="/medical-records" component={MedicalRecords} />
                 <Route path="/tips" component={Tips}/>
+                <Route path="/register-hosp" component={SignIn}/>
+                <Route path="/register-personal" component={WorkerSignUp}/>
+                <Route path="/add-job" component={AddJob}/>
+                <Route path="/add-aid" component={AddAid}/>
               <Route render={renderprops =>
                 <Error {...renderprops} />} />
           </Switch>

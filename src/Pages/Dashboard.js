@@ -12,6 +12,8 @@ const handleClick = (e) => {
     clickedBtn === 'add-record' ? setRedirect("/add-record"):
     clickedBtn === 'existing-patients' ? setRedirect("/my-records"):
     clickedBtn === 'patient-schedule' ? console.log('appointments'):
+    clickedBtn === 'patient-jobs' ? setRedirect('/add-job'):
+    clickedBtn === 'patient-aid' ? setRedirect('/add-aid'):
     clickedBtn === 'search-database' ? console.log('retrieve from database'):
     clickedBtn === 'data-visualization' ? setRedirect("/visualise"):
     console.log('click');
@@ -94,6 +96,14 @@ else
             </li>
             <li className="list-group-item">
                 <button onClick={handleClick} value="data-visualization"  type="button"className="d-flex justify-content-left align-items-center"><i className="fa fa-area-chart fa-3x" aria-hidden="false"></i> Data visualization</button>
+            </li>
+            <li className="list-group-item">
+                <button onClick={handleClick} value="patient-jobs"  type="button"className="d-flex justify-content-left align-items-center">
+                <i className="fa fa-calendar-check-o fa-3x" aria-hidden="false"></i> Add Jobs</button>
+            </li>
+            <li className="list-group-item">
+                <button onClick={handleClick} value="patient-aid"  type="button"className="d-flex justify-content-left align-items-center">
+                <i className="fa fa-calendar-check-o fa-3x" aria-hidden="false"></i> Add Aid</button>
             </li>
         </ul>
         </div>

@@ -31,7 +31,7 @@ const Login = () => {
       const form = document.getElementById('sign-in-form');
       if(form){
       form.addEventListener('submit', (e) => {
-        e.preventDefault();
+      e.preventDefault();
       const formData = new FormData(form);
         const email = formData.get('email');
         const password = formData.get('password');
@@ -44,7 +44,7 @@ const Login = () => {
       return () => {
         form.removeEventListener('submit', (e) => {
         e.preventDefault();
-      const formData = new FormData(form);
+        const formData = new FormData(form);
         const email = formData.get('email');
         const password = formData.get('password');
         console.log(email)
@@ -120,7 +120,6 @@ const Login = () => {
             <h1>Create Account</h1>
             <Link to="/register-hosp" className="register-links">Sign up your hospital</Link>
             <Link to="/register-personal" className="register-links">Sign up as a healthcare provider</Link>
-            <Link to="/register-patient" className="register-links">Sign up as a patient</Link>
           </form>
         </div>
 
@@ -140,6 +139,7 @@ const Login = () => {
           </form>
         </div>
 
+       
         <div className="overlay-container">
           <div className="overlay">
             <div className="overlay-panel overlay-left">
